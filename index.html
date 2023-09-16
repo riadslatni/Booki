@@ -20,44 +20,55 @@
             <nav>
                 <img src="images/logo/Booki.png" alt="Booki" class="size-logo">
                 <div class="navigation-menu">
-                    <a class="button-nav" href="Hébergement">Hébergement</a>
-                    <a class="button-nav" href="Activités">Activités</a>
+                    <button class="button-nav" href="#hebergements">Hébergement</a>
+                    <button class="button-nav" href="">Activités</a>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section>
-                <h1>Trouver votre hebergement pour des vacances de rêve</h1>
+            <section class="search-filter">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou bien en pleine nature</p>
                 <div class="Search">
                     <div class="iconSearch">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <input type="search" value="Marseille" class="input-search" name="query">
-                    <button class="submit">Rechercher</button>
+                    <input type="search" value="Marseille, France" class="input-search" name="query">
+                    <button class="submit">
+                        <i id="search-icon" class="fa-solid fa-search"></i>
+                        <span class="search-text-button">Rechercher</span>
+                    </button>
                 </div>
-                <div class="filter">
-                    <h2>filtres</h2>
+                <h2>Filtres</h2>
 
-                    <div class="buttonfilter"><i class="fa-solid
-                                    fa-money-bill-wave"></i><span class="buttonfilter-text"> Économique</span></div>
-                    <button class="buttonfilter"><i class="fa-solid fa-person"></i><span
-                            class="buttonfilter-text">Familial</span></button>
-                    <button class="buttonfilter"><i class="fa-solid
-                                    fa-heart"></i><span class="buttonfilter-text">Romantique</span></button>
-                    <button class="buttonfilter"><i class="fa-solid fa-fire"></i><span class="buttonfilter-text">Nos
-                            pépites</span></button>
+                <div class="filter">
+                    <button class="buttonfilter">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span class="buttonfilter-text"> Économique</span>
+                    </button>
+                    <button class="buttonfilter">
+                        <i class="fa-solid fa-person"></i>
+                        <span class="buttonfilter-text">Familial</span>
+                    </button>
+                    <button class="buttonfilter">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="buttonfilter-text">Romantique</span>
+                    </button>
+                    <button class="buttonfilter">
+                        <i class="fa-solid fa-fire"></i>
+                        <span class="buttonfilter-text">Nos pépites</span>
+                    </button>
                 </div>
                 <i class="fa-solid fa-info fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville
             </section>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section name="hebergements" class="hebergements">
 
                     <h2>Hébergement à marseille</h2>
 
-                    <div class="direction-row">
+                    <div class="hebergement-list-cards">
                         <div class="hebergements-cards">
                             <article class="card">
                                 <img src="./images/hebergements/Hotel du port.jpg"
@@ -120,7 +131,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="direction-row">
+                    <div class="hebergement-list-cards">
                         <div class="hebergements-cards">
                             <article class="card">
                                 <img src="./images/hebergements/Hotel de la mer.jpg"
@@ -181,7 +192,6 @@
                                 </div>
                             </article>
                         </div>
-
                     </div>
                     <h4> Afficher plus</h4>
                 </section>
@@ -249,11 +259,8 @@
                     </div>
                 </section>
             </div>
-
-            <div class="activites">
-
+            <div name="activites" class="activites">
                 <h3>Activités à Marseille</h3>
-
                 <div class="activites-card">
                     <article class="card">
                         <img src="./images/activites/Vieux-Port.jpg" alt="Image montrant le Vieux-Port"
@@ -322,9 +329,9 @@
             </section>
         </footer>
     </div>
-  
+
 </body>
 
- 
+
 
 </html>
